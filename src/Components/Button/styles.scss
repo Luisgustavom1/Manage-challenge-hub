@@ -1,0 +1,14 @@
+@import '../../Styles/variables';
+
+.container-button {
+  background: $--tw-primary-red;
+  padding: 10px 24px;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+
+  &:hover {
+    background: rgba($--tw-primary-red, .7);
+  }
+}

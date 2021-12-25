@@ -1,6 +1,13 @@
+import React from "react";
+import Button from "../Button";
+
+import "./styles.scss";
+
 function Header() {
+  const [open, setOpen] = React.useState(false);
+
   return (
-    <header>
+    <header className="container-header">
       <svg xmlns="http://www.w3.org/2000/svg" width="146" height="24">
         <g fill="none" fillRule="evenodd">
           <path
@@ -20,6 +27,29 @@ function Header() {
           </g>
         </g>
       </svg>
+      <nav className={`container-nav ${open ? 'open' : ''}`}>
+        <ul className="nav-list">
+          <li>Pricing</li>
+          <li>Product</li>
+          <li>About us</li>
+          <li>Careers</li>
+          <li>Community</li>
+        </ul>
+      </nav>
+      <section
+        onClick={() => setOpen(!open)}
+        className={`container-menu-responsive ${open ? 'open' : ''}`}
+      >
+        <svg className="menu-hamburguer" xmlns="http://www.w3.org/2000/svg" width="25" height="18">
+          <g fill="#242D52" fillRule="evenodd">
+            <path d="M0 0h25v4H0zM0 7h25v4H0zM0 14h25v4H0z" />
+          </g>
+        </svg>
+        <svg className="close-menu-hamburguer" xmlns="http://www.w3.org/2000/svg" width="21" height="22"><path fill="#242D52" fill-rule="evenodd" d="M17.925.747l2.828 2.828L13.328 11l7.425 7.425-2.828 2.828-7.425-7.425-7.425 7.425-2.828-2.828L7.671 11 .247 3.575 3.075.747 10.5 8.171 17.925.747z" /></svg>
+      </section>
+      <Button>
+        Get Started
+      </Button>
     </header>
   );
 }
