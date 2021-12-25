@@ -31,3 +31,9 @@ a, ul, li, ol {
 button, img, svg, a {
   user-select: none;
 }
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 52.5%;
+  }
+}
