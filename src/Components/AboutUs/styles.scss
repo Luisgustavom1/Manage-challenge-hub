@@ -2,20 +2,28 @@
   width: 90vw;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
+  gap: 40px;
 
   .introduction-aboutUs {
+    width: 80%;
     min-width: 325px;
 
-    .title {
+    .title-md {
       margin-bottom: 20px;
     }
   }
 }
 
-@media (max-width: 440px) {
+.container-categories {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+@media (max-width: 444px) {
   .container-aboutUs {
     text-align: center;
+    justify-items: center;
   }
 }

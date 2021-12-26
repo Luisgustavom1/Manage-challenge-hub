@@ -1,0 +1,34 @@
+@import '../../../styles/variables';
+
+.categorie {
+  text-align: left;
+}
+
+.container-title {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 15px;
+  margin-bottom: 10px;
+
+  .title-number {
+    display: grid;
+    place-items: center;
+    background-color: $--tw-primary-red;
+    padding: 7px 0;
+    width: 60px;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: 700;
+  }
+
+  .title-text {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 444px) {
+  .container-title {
+    background-color: $--tw-neutral-red;
+  }
+}

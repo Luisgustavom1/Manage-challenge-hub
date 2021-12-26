@@ -1,15 +1,33 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 
-interface ICategories {
+import './styles.scss';
+interface ICategoriesTitle {
   number: number;
   title: string;
 }
 
-const Categories = ({ number, title }: ICategories) => {
+interface ICategories extends ICategoriesTitle {
+  children: ReactNode
+}
+
+const CategoriesTitle = ({ number, title }: ICategoriesTitle) => {
   return (
-    <section>
-      <div>{number}</div>
-    </section>
+    <span className='container-title'>
+      <div className='title-number'>{String(number).padStart(2, '0')}</div>
+      <h5 className='title-text'>{title}</h5>
+    </span>
+  )
+}
+
+const Categories = ({ number, title, children }: ICategories) => {
+  return (
+    <div className='categorie'>
+      <CategoriesTitle
+        number={number}
+        title={title}
+      />
+      <p className="body-lg">{children}</p>
+    </div>
   );
 }
 

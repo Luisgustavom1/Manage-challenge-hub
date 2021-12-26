@@ -35,6 +35,12 @@ button, img, svg, a {
 
 @media (max-width: 1024px) {
   html {
-    font-size: 52.5%;
+    font-size: 48.5%;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 38.5%;
   }
 }
