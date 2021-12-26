@@ -1,0 +1,37 @@
+@import './variables';
+
+.title-lg {
+  font-size: 64px;
+}
+
+.body-lg {
+  color: $--tw-neutral-blue;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+@media (max-width: 1240px) {
+  .title-lg {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .title-lg {
+    font-size: 40px;
+  }
+
+  .body-lg {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title-lg {
+    font-size: 32px;
+  }
+
+  .body-lg {
+    font-size: 16px;
+  }
+}

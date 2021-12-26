@@ -10,7 +10,7 @@ function Header() {
 
   return (
     <header className="container-header">
-      <section className="content-header">
+      <div className="content-header">
         <svg xmlns="http://www.w3.org/2000/svg" width="146" height="24">
           <g fill="none" fillRule="evenodd">
             <path
@@ -38,7 +38,7 @@ function Header() {
         <Button>
           Get Started
         </Button>
-      </section>
+      </div>
       <div className="top-illustration illustration"></div>
     </header>
   );

@@ -1,0 +1,45 @@
+.container-introduction {
+  width: 90vw;
+  margin: 80px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
+  gap: 40px;
+
+  .text-introduction {
+    width: 100%;
+    margin-top: 32px;
+
+    .body-lg {
+      width: 80%;
+      min-width: 280px;
+      margin: 20px 0 40px 0;
+    }
+  }
+
+  .illustration-charts {
+    width: 85%;
+    min-width: 325px;
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 440px) {
+  .container-introduction {
+    justify-items: center;
+    
+    .text-introduction {
+      text-align: center;
+      order: 2;
+      margin-top: 0;
+
+      .body-lg {
+        margin: 10px auto 20px auto;
+      }
+    }
+
+    .illustration-charts {
+      margin: 0;
+      order: 1;
+    }
+  }
+}
