@@ -16,6 +16,7 @@ body {
   font-weight: 500;
   color: $--tw-primary-dark;
   background-color: $--tw-neutral-gray;
+  overflow-x: hidden;
 }
 
 button, input, textarea {
