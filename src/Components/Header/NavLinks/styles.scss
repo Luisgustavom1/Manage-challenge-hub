@@ -1,0 +1,38 @@
+.container-nav {
+  font-weight: 700;
+  font-size: 14px;
+
+  .nav-list {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-nav {
+    position: absolute;
+    width: 100%;
+    top: 100px;
+
+    .nav-list {
+      opacity: 0;
+      background: #fff;
+      box-shadow: -1px 0px 20px 20px rgba(0, 0, 0, .05);
+      border-radius: 3px;
+      padding: 40px 0;
+      flex-direction: column;
+      gap: 25px;
+      transform-origin: top center;
+      transform: rotateX(-90deg);
+      transition: all 225ms ease-in-out;
+    }
+
+    &.open {
+      .nav-list {
+        opacity: 1;
+        transform: rotateX(0);
+      }
+    }
+  }
+}

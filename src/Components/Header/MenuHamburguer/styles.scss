@@ -1,0 +1,23 @@
+.container-menu-responsive {
+  display: none;
+}
+
+@media (max-width: 768px) {  
+  .container-menu-responsive {
+    display: block;
+
+    .close-menu-hamburguer {
+      display: none;
+    }
+
+    &.open {
+      .menu-hamburguer {
+        display: none;
+      }
+  
+      .close-menu-hamburguer {
+        display: block;
+      }
+    }
+  }
+}

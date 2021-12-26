@@ -8,26 +8,13 @@
   position: relative;
 }
 
-.container-menu-responsive {
-  display: none;
-}
-
-.container-nav {
-  font-weight: 700;
-  font-size: 14px;
-  .nav-list {
-    display: flex;
-    align-items: center;
-    gap: 2.4rem;
-  }
-}
-
 @media (max-width: 768px) {
   .container-header {
     button {
       display: none;
     }
   }
+  
   .container-menu-responsive {
     display: block;
 
@@ -42,34 +29,6 @@
   
       .close-menu-hamburguer {
         display: block;
-      }
-    }
-  }
-
-  .container-nav {
-    position: absolute;
-    width: 100%;
-    top: 100px;
-    opacity: 0;
-
-    .nav-list {
-      background: #fff;
-      box-shadow: -1px 0px 20px 20px rgba(0, 0, 0, .05);
-      border-radius: 3px;
-      padding: 40px 0;
-      flex-direction: column;
-      gap: 25px;
-      transform-origin: top center;
-      transform: rotateX(-90deg);
-      transition: all 225ms ease-in-out;
-    }
-
-    &.open {
-      opacity: 1;
-
-      .nav-list {
-        opacity: 1;
-        transform: rotateX(0);
       }
     }
   }
