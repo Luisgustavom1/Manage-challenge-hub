@@ -15,7 +15,7 @@
 .illustration {
   position: absolute;
   z-index: -1;
-  min-width: 380px;
+  min-width: 350px;
   width: 40vw;
   min-height: 280px;
   height: 45vh;
@@ -24,9 +24,9 @@
   
   &::after {
     background: $--tw-neutral-red;
-    width: 65%;
+    width: 50%;
     height: 100%;
-    left: -30%;
+    left: -25%;
     content: '';
     display: block;
     z-index: -1;
