@@ -1,0 +1,21 @@
+.container-aboutUs {
+  width: 90vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+  gap: 20px;
+
+  .introduction-aboutUs {
+    min-width: 325px;
+
+    .title {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  .container-aboutUs {
+    text-align: center;
+  }
+}
