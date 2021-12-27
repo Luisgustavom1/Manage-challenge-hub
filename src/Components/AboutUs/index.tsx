@@ -7,7 +7,7 @@ const AboutUs = () => {
     <div className='container-aboutUs'>
       <section className='introduction-aboutUs'>
         <h1 className='title-md'>What’s different about Manage?</h1>
-        <p className='body-lg'>Manage provides all the functionality your team needs, without the complexity. Our software is tailor-made for modern digital product teams.</p>
+        <p className='body-md'>Manage provides all the functionality your team needs, without the complexity. Our software is tailor-made for modern digital product teams.</p>
       </section>
       <aside className='container-categories'>
         <Categories

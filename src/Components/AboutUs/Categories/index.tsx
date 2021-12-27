@@ -14,19 +14,19 @@ const CategoriesTitle = ({ number, title }: ICategoriesTitle) => {
   return (
     <span className='container-title'>
       <div className='title-number'>{String(number).padStart(2, '0')}</div>
-      <h5 className='title-text'>{title}</h5>
+      <h4 className='title'>{title}</h4>
     </span>
   )
 }
 
 const Categories = ({ number, title, children }: ICategories) => {
   return (
-    <div className='categorie'>
+    <div className='container-categorie'>
       <CategoriesTitle
         number={number}
         title={title}
       />
-      <p className="body-lg">{children}</p>
+      <p className="body-md text">{children}</p>
     </div>
   );
 }

@@ -1,13 +1,16 @@
 @import '../../../styles/variables';
 
-.categorie {
+.container-categorie {
   text-align: left;
+
+  .text {
+    padding-left: 70px;
+  }
 }
 
 .container-title {
   display: flex;
   align-items: center;
-  justify-content: start;
   gap: 15px;
   margin-bottom: 10px;
 
@@ -21,14 +24,15 @@
     color: #fff;
     font-weight: 700;
   }
-
-  .title-text {
-    font-size: 14px;
-  }
 }
 
 @media (max-width: 444px) {
-  .container-title {
-    background-color: $--tw-neutral-red;
+  .container-categorie {  
+    .container-title {
+      background-color: $--tw-neutral-red;
+    }
+    .text {
+      padding-left: 0;
+    }
   }
 }
