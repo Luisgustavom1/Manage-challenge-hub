@@ -1,0 +1,21 @@
+@import '../../../styles/variables';
+
+.container-cards {
+  width: 32vw;
+  min-width: 375px;
+  background: $--tw-neutral-gray;
+  position: relative;
+  padding: 45px 20px;
+
+  img {
+    position: absolute;
+    width: 60px;
+    left: 50%;
+    top: -20%;
+    transform: translateX(-50%);
+  }
+
+  .title-sm {
+    margin-bottom: 15px;
+  }
+}

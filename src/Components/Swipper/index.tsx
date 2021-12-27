@@ -14,7 +14,11 @@ import SwiperCore, { Pagination } from "swiper";
 // install Swiper modules
 SwiperCore.use([Pagination]);
 
-export default function Swipper() {
+interface ISwapperProps {
+  cards: React.ReactNode[];
+}
+
+export default function Swipper({ cards }: ISwapperProps) {
   return (
     <Swiper
       slidesPerView={3}
@@ -24,10 +28,9 @@ export default function Swipper() {
       }}
       className="mySwiper"
     >
-      <SwiperSlide>Slide 1</SwiperSlide>
-      <SwiperSlide>Slide 2</SwiperSlide>
-      <SwiperSlide>Slide 3</SwiperSlide>
-      <SwiperSlide>Slide 4</SwiperSlide>
+      {cards.map((card, i) => (
+        <SwiperSlide key={i}>{card}</SwiperSlide>
+      ))}
     </Swiper>
   );
 }

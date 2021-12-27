@@ -33,7 +33,8 @@
       }
     ],
     "import/extensions": ["error", "never"],
-    "import/no-unresolved": "off"
+    "import/no-unresolved": "off",
+    "react/no-array-index-key": "off"
   },
   "settings": {
     "import/resolver": {

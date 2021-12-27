@@ -1,0 +1,15 @@
+@import '../../styles/variables';
+
+.swiper {
+  overflow: visible;
+} 
+
+.swiper-pagination-bullet {
+  border: 1px solid $--tw-primary-red;
+  background: transparent;
+  opacity: 1;
+
+  &.swiper-pagination-bullet-active {
+    background: $--tw-primary-red;
+  }
+}
