@@ -8,6 +8,7 @@ import Swipper from "../Swipper";
 import CardsDepositions from "./CardsDepositions";
 
 import "./styles.scss";
+import Button from "../Button";
 
 function Depositions() {
   return (
@@ -38,6 +39,7 @@ function Depositions() {
           />,
         ]}
       />
+      <Button>Get Started</Button>
     </section>
   );
 }
