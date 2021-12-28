@@ -30,7 +30,7 @@ a, ul, li, ol {
   text-decoration: none;
 }
 
-button, img, svg, a {
+button, img, svg, a, input::placeholder {
   user-select: none;
 }
 
