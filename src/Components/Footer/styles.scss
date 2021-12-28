@@ -5,7 +5,7 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  gap: 45px;
+  grid-gap: 45px;
   padding: 30px 20px;
 
   .container-input {
@@ -84,9 +84,13 @@
   }
 }
 
+.copy-one {
+  display: none;
+}
+
 @media (min-width: 985px) {
   .container-footer {
-    padding: 30px 80px;
+    padding: 50px 80px;
   }
   .container-logo {
     order: 1;
@@ -101,7 +105,11 @@
   .container-input {
     order: 3;
   }
-  .subtitle {
-    order: 4;
+  .copy-one {
+    display: block;
+    margin-top: 50px;
+  }
+  .copy-two {
+    display: none;
   }
 }

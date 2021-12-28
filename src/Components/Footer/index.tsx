@@ -24,6 +24,7 @@ function Footer() {
           <input placeholder="Updates in your inbox..." />
           <Button>GO</Button>
         </div>
+        <p className="subtitle copy-one">Copyright 2020. All rights Reserved</p>
       </span>
       <section className="container-links">
         <div className="collumn">
@@ -91,7 +92,7 @@ function Footer() {
           </svg>
         </article>
       </div>
-      <p className="subtitle">Copyright 2020. All rights Reserved</p>
+      <p className="subtitle copy-two">Copyright 2020. All rights Reserved</p>
     </footer>
   );
 }
