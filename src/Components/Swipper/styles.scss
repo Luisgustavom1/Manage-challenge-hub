@@ -8,9 +8,17 @@
 .swiper-pagination-bullet {
   border: 1px solid $--tw-primary-red;
   background: transparent;
-  opacity: 1;
+  opacity: 0;
 
   &.swiper-pagination-bullet-active {
     background: $--tw-primary-red;
+  }
+}
+
+@media (max-width: 375px) {
+  .swiper-pagination-bullet {
+    opacity: 1;
+    top: 40px;
+    position: relative;
   }
 }

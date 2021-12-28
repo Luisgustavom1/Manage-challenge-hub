@@ -1,4 +1,14 @@
 .container-depositions {
   text-align: center;
-  margin-top: 80px;
+  margin: 100px 0;
+}
+
+@media (max-width: 375px) {
+  .container-depositions {
+    margin: 60px 0;
+
+    button {
+      margin-top: 30px;
+    }
+  }
 }
