@@ -1,4 +1,6 @@
 import React from "react";
+
+import imgIllustration from "../../Assets/svg/bg-tablet-pattern.svg";
 import Button from "../Button";
 import MenuHamburguer from "./MenuHamburguer";
 import NavLinks from "./NavLinks";
@@ -30,16 +32,10 @@ function Header() {
             </g>
           </g>
         </svg>
-        <NavLinks isOpen={open}/>
-        <MenuHamburguer
-          isOpen={open}
-          setIsOpen={setOpen}
-        />
-        <Button>
-          Get Started
-        </Button>
+        <NavLinks isOpen={open} />
+        <MenuHamburguer isOpen={open} setIsOpen={setOpen} />
+        <Button>Get Started</Button>
       </div>
-      <div className="top-illustration illustration"></div>
     </header>
   );
 }

@@ -15,8 +15,9 @@ body {
   font-size: 16px;
   font-weight: 500;
   color: $--tw-primary-dark;
-  background: white;
   overflow-x: hidden;
+  background: #fff url(../Assets/svg/bg-tablet-pattern.svg) no-repeat right -140px top -110px;
+  background-size: 460px;
 }
 
 button, input, textarea {
