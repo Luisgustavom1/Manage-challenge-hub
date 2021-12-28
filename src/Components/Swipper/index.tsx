@@ -10,6 +10,7 @@ import "./styles.scss";
 
 // import Swiper core and required modules
 import SwiperCore, { Pagination } from "swiper";
+import { useViewportWidth } from "../../contexts/useViewportWidth";
 
 // install Swiper modules
 SwiperCore.use([Pagination]);
@@ -19,9 +20,11 @@ interface ISwapperProps {
 }
 
 export default function Swipper({ cards }: ISwapperProps) {
+  const { viewportWidth } = useViewportWidth();
+
   return (
     <Swiper
-      slidesPerView={3}
+      slidesPerView={Math.trunc(viewportWidth / 375)}
       spaceBetween={30}
       pagination={{
         clickable: true,
