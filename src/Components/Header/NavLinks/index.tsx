@@ -1,13 +1,14 @@
-import React from 'react';
+import React from "react";
 
-import './styles.scss';
+import "./styles.scss";
+
 interface INavLinks {
-  isOpen: boolean
+  isOpen: boolean;
 }
 
-const NavLinks = ({ isOpen }: INavLinks) => {
+function NavLinks({ isOpen }: INavLinks) {
   return (
-    <nav className={`container-nav ${isOpen ? 'open' : ''}`}>
+    <nav className={`container-nav ${isOpen ? "open" : ""}`}>
       <ul className="nav-list">
         <li>Pricing</li>
         <li>Product</li>
