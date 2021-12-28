@@ -1,0 +1,64 @@
+@import '../../styles/variables';
+
+.container-call-action {
+  width: 100vw;
+  background-color: $--tw-primary-red;
+  margin-top: 40px;
+  position: relative;
+  overflow: hidden;
+  
+  .content-call-action {
+    width: 90vw;
+    margin: 0 auto;
+    padding: 50px 0;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .title-lg {
+    color: white;
+    min-width: 285px;
+    width: 50%;
+    z-index: 2;
+  }
+}
+
+.illustration-side {
+  width: 15%;
+    height: 145%;
+    background-color: $--tw-neutral-red;
+    opacity: 0.08;
+    bottom: -50%;
+    left: 30%;
+    position: absolute;
+    transform: rotate(45deg);
+
+  &:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 60%;
+    border-radius: 50%;
+    background-color: $--tw-neutral-red;
+    position: relative;
+    top: -90px;
+  }
+}
+
+@media (max-width: 388px) {
+  .container-call-action {
+    .content-call-action {
+      justify-content: center;
+      text-align: center;
+    }
+  }
+
+  .illustration-side {
+    bottom: -10%;
+    left: -40%;
+  }
+}
+

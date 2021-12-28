@@ -1,15 +1,23 @@
 @import '../../styles/variables';
 
 .container-button {
-  background: $--tw-primary-red;
   padding: 10px 24px;
   border-radius: 20px;
-  color: #fff;
   font-size: 12px;
-  font-weight: 500;
+  font-weight: 600;
   box-shadow: 1px 3px 10px rgba($--tw-primary-red, .6);
   
   &:hover {
-    background: rgba($--tw-primary-red, .7);
+    opacity: .9;
+  }
+
+  &.button-primary {
+    background: $--tw-primary-red;
+    color: #fff;
+  }
+
+  &.button-secondary {
+    background: #fff;
+    color: $--tw-primary-red;
   }
 }

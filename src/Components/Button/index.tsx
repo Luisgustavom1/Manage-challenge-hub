@@ -1,19 +1,20 @@
-import React, { ButtonHTMLAttributes, ReactNode } from 'react';
+import React, { ButtonHTMLAttributes, ReactNode } from "react";
 
-import './styles.scss';
+import "./styles.scss";
 
 interface IButton extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode;
 }
 
-function Button({ children, ...rest }: IButton) {
+function Button({ children, color = "primary", ...rest }: IButton) {
   return (
-    <button 
-      className='container-button'
+    <button
+      type="button"
+      className={`container-button button-${color}`}
       {...rest}
-      >
+    >
       {children}
-    </button>  
+    </button>
   );
 }
 
