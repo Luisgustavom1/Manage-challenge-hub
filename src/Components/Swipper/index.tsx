@@ -24,7 +24,17 @@ export default function Swipper({ cards }: ISwapperProps) {
 
   return (
     <Swiper
-      slidesPerView={Math.trunc(viewportWidth / 375)}
+      slidesPerView={(() => {
+        if (viewportWidth > 375) {
+          const slides = Math.trunc(viewportWidth / 375);
+          if (slides > 3) {
+            return 3;
+          }
+
+          return slides;
+        }
+        return 1;
+      })()}
       spaceBetween={30}
       pagination={{
         clickable: true,
