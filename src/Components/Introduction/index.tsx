@@ -10,7 +10,7 @@ function Introduction() {
     <section className="container-introduction">
       <aside className="text-introduction">
         <h1 className="title-lg">
-          Bring everyone together to build better products. OI
+          Bring everyone together to build better products. OIi
         </h1>
         <p className="body-lg">
           Manage makes it simple for software teams to plan day-to-day tasks
